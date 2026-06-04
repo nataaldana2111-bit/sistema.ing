@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ENCABEZADO */
+
+.header{
+    background:#E60926;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+    width: 100px;
+    height:auto;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    margin-bottom:10px;
+}
+
+.titulo h2{
+    margin-bottom:5px;
+}
+
+/* LOGIN */
+
+.login-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.login-card{
+    background:white;
+    width:400px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#E60926;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.login-card button{
+    width:100%;
+    padding:12px;
+    background:#E60926;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-card button:hover{
+    background:#a30000;
+}
+
+#mensajeError{
+    color:red;
+    margin-top:10px;
+    text-align:center;
+}
+
+/* PERFIL */
+
+.perfil{
+    background:white;
+    width:90%;
+    max-width:1000px;
+    margin:25px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.perfil h2{
+    color:#E60926;
+    margin-bottom:15px;
+}
+
+.perfil p{
+    margin:8px 0;
+}
+
+/* SELECTOR */
+
+.selector{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.selector label{
+    font-weight:bold;
+}
+
+.selector select{
+    padding:10px;
+    margin-left:10px;
+    border-radius:8px;
+}
+
+/* TABLA */
+
+.tabla-container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#E60926;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+/* BOTONES */
+
+.botones{
+    width:90%;
+    max-width:1000px;
+    margin:25px auto;
+    display:flex;
+    gap:15px;
+}
+
+.botones button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#E60926;
+    color:white;
+}
+
+.botones button:hover{
+    background: #E60926;
+    ;
+}

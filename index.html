@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Integral de Consulta Académica FI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header">
+
+        <div class="logo-container">
+            <img src="img/unam.png" alt="UNAM" class="logo">
+        </div>
+
+        <div class="titulo">
+            <h1>Sistema Integral de Consulta Académica</h1>
+            <h2>Facultad de Ingeniería</h2>
+            <p>Universidad Nacional Autónoma de México</p>
+        </div>
+
+        <div class="logo-container">
+            <img src="img/fi.png" alt="Facultad de Ingeniería" class="logo">
+        </div>
+
+    </header>
+
+    <!-- LOGIN -->
+
+    <section id="loginSection" class="login-section">
+
+        <div class="login-card">
+
+            <h2>Acceso de Alumnos</h2>
+
+            <input
+                type="text"
+                id="cuenta"
+                placeholder="Número de cuenta">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña">
+
+            <button onclick="iniciarSesion()">
+                Ingresar
+            </button>
+
+            <p id="mensajeError"></p>
+
+        </div>
+
+    </section>
+
+    <!-- PANEL DEL ALUMNO -->
+
+    <section id="panelAlumno" style="display:none;">
+
+        <div class="perfil">
+
+            <p><strong>Nombre:</strong> <span id="nombreAlumno"></span></p>
+
+            <p><strong>Cuenta:</strong> <span id="cuentaAlumno"></span></p>
+
+            <p><strong>Carrera:</strong> <span id="carreraAlumno"></span></p>
+
+            <p><strong>Año de ingreso:</strong> <span id="ingresoAlumno"></span></p>
+
+            <p><strong>Semestre actual:</strong> <span id="semestreActual"></span></p>
+
+        </div>
+
+        <div class="selector">
+
+            <label>
+                Seleccionar semestre:
+            </label>
+
+            <select id="semestreSelect"
+                    onchange="cargarSemestre()">
+            </select>
+
+        </div>
+
+        <div class="tabla-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Clave</th>
+                        <th>Asignatura</th>
+                        <th>Créditos</th>
+                        <th>Calificación</th>
+                        <th>Estatus</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaCalificaciones">
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="botones">
+
+            <button onclick="descargarPDF()">
+                Descargar PDF
+            </button>
+
+            <button onclick="cerrarSesion()">
+                Cerrar Sesión
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="alumnos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
